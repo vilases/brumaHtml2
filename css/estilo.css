@@ -1,20 +1,32 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 h1{
     font-family: 'Alkatra', cursive;
     text-align: center;
     font-size: 4em ;
     display: none;
 }
-header{
+.encabezado{
+    position: relative;
     background-color: rgb(148, 97, 196);
     border-radius: 5px;
-    width: 100%;
-    top: 0 px;
-    margin: 0px;
+    width: 90%;
+    margin: 0 auto;
     
 }
 
-header nav a{
+
+.navegacion {
+    position: fixed;
+    margin-top: 0%;
+    top: 1.5em;
+    width: 90%;
+    
+    margin: 0 auto;
+}
+nav a{
     background-color: rgb(131, 66, 192);
     padding: 5px;
     border-radius: 3px;
