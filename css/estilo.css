@@ -2,32 +2,39 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
 h1{
     font-family: 'Alkatra', cursive;
     text-align: center;
     font-size: 4em ;
     display: none;
 }
+.navegacion {
+    background-color: #a18cd1 ;
+    border-radius: 5px;
+    padding: 1em 0em;
+    position: relative;
+    margin-top: 0%;
+    top: 0;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
 .encabezado{
     position: relative;
-    background-color: rgb(148, 97, 196);
+    top: 0;
+    background-color: #a18cd1 ;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
     
 }
 
-
-.navegacion {
-    position: fixed;
-    margin-top: 0%;
-    top: 1.5em;
-    width: 90%;
-    
-    margin: 0 auto;
-}
 nav a{
-    background-color: rgb(131, 66, 192);
+    background-color: rgb(97, 18, 170);
     padding: 5px;
     border-radius: 3px;
     margin: 5px;
@@ -38,22 +45,25 @@ header p{
     text-align: center;
 }
 header p img{
-    width: 150;
+    width: 10%;
     
 }
 main{
-    position: static;
-    top: 100px;
+    position: relative;
+    top: 2.5em;
 }
 section{
-    text-align: center;
+    text-align: left;
+    margin:0 5em;
+
 }
 table {
     margin-left: auto;
     margin-right: auto;
+    z-index: 0;
 }
 table tr td{
-    background-color: gray;
+    background-color: rgb(170, 71, 140);
     border-radius: 100px;
     height: 100px;
     width: 100px;
@@ -71,25 +81,83 @@ section article{
     margin: 40px;
 }
 .td:hover{  
-    animation-name: cambiarColor;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation: cambiarColor 2s linear 1s 4 normal forwards running;
+     
 }
+
 @keyframes cambiarColor{
-    0% {background-color: gray;}
-    25%{background-color: rgb(48, 48, 54);}
-    50% {background-color: rgb(39, 37, 37);}
-    75%{background-color: rgb(48, 48, 54);}
-    100% {background-color: gray;}
+    0% {background-color: rgb(170, 71, 140);}
+    25%{background-color: rgb(175, 59, 140);}
+    50% {background-color: rgb(175, 44, 136);}
+    75%{background-color: rgb(177, 30, 133);}
+    100% {background-color: rgb(175, 12, 126);}
 }
 
 footer{
-
+    width: 100%;
+    position: relative;
+    top: 3em;
     text-align: center;
-    background-color: rgb(195, 147, 240) ;
+    background-color: #fbc2eb  ;
     color: black;
+    margin: 0 auto;
 
 }
-footer a{
-    color:black;
+.dropdown {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+  }
+  #boton {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 0.5em;
+    background-color: rgb(97, 18, 170);
+    border-radius: 5px;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba( 0,0,0,1);
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+  
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.formulario{
+    position: relative;
+    left: 2.9em;
+    font-size: 1.5em;
+}
+.formulario input{
+    width: 15em;
+    height: 2em;
+    font-size: 0.7em;
+    text-align: justify;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+#env {
+    border: 1px solid black;
+    background-color: rgb(97, 18, 170);
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 3px;
 }

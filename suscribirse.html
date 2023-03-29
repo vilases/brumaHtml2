@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57a21d2b89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Bruma Sahumerios</title>
 </head>
 <body>
     <header class="encabezado">
         <h1>Bruma</h1>
         <p><img src="favicon/android-chrome-192x192.png" alt=""></p>
-        <nav>
+        <nav class="navegacion">
             <a href="index.html">Home</a>
-            <a href="#">Productos</a>
-            <a href="#">Contacto</a>
-            <a href="#">Local</a>
-            <a href="#">Subscribirse</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="local.html">Local</a>
+            <a href="suscribirse.html">Subscribirse</a>
         </nav>
-        <br>
     </header>
-
+    
+    <main>  
+        <form class="formulario" action="#" target="_blank">
+            <label for="firstname">Nombre: </label> <input type="text" name="firstname" placeholder="Ingrese su nombre aqui" required><br><br>
+            <label for="password">Contraseña: </label> <input type="password" name="password" placeholder="Ingrese su contraseña aqui" minlength="6" required><br><br>
+            <label for="lastname">Apellido: </label> <input type="text" name="lastname" placeholder="Ingrese su apellido aqui" required><br><br>
+            <label for="adrees">Direccion: </label> <input type="text" name="address" placeholder="Ingrese su direccion aqui" required><br><br>
+            <label for="city">Ciudad: </label> <input type="text" name="city" value="C.A.B.A."><br><br>
+            <label for="zipcode">Codigo Postal: </label> <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui" required><br><br>
+            <label for="birthdate">Fecha de Nacimiento:</label> <input type="date" name="birthdate" id="" required><br><br>
+           
+            <input id="env" type="submit" value="Enviar">
+        </form>
+    </main>
     <footer>
-        <footer >
-            <a class="icon" href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a class="icon" href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a class="icon" href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <p>Derechos Reservados 2023</p>
-        </footer> 
+        <a href="https://api.whatsapp.com/send?phone=541131258499"><i class='bx bxl-whatsapp bx-md' style='color:#07c112'  ></i></a>
+        <a href="https://instagram.com/bruma_sahumerios?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram bx-md' style='color:#f1b211'  ></i></a>
+        <p>Derechos Reservados 2023</p>  
     </footer>
 </body>
 </html>
