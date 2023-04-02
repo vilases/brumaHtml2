@@ -69,11 +69,12 @@ table tr td{
     width: 100px;
 }
 
-section article{
+.prologo{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     font-size: 1.3em;
     margin: 0 auto;
-    width: 500px;
+    width: 80%;
+    max-width: 800px;
 }
 .iconos{
     height: 100px;
