@@ -4,7 +4,7 @@
 }
 body{
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-}
+} 
 h1{
     font-family: 'Alkatra', cursive;
     text-align: center;
@@ -57,17 +57,22 @@ section{
     margin:0 5em;
 
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 0;
+.contenedor{
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px red solid;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-table tr td{
-    background-color: rgb(170, 71, 140);
+.item  {
     border-radius: 100px;
-    height: 100px;
-    width: 100px;
-}
+    background-color: #a18cd1;
+    
+    }
+
 
 .prologo{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -81,17 +86,14 @@ table tr td{
     width: 100px ;
     margin: 40px;
 }
-.td:hover{  
-    animation: cambiarColor 2s linear 1s 4 normal forwards running;
+.item:hover{  
+    animation: cambiarColor 2s linear 4 normal forwards running;
      
 }
 
 @keyframes cambiarColor{
-    0% {background-color: rgb(170, 71, 140);}
-    25%{background-color: rgb(175, 59, 140);}
-    50% {background-color: rgb(175, 44, 136);}
-    75%{background-color: rgb(177, 30, 133);}
-    100% {background-color: rgb(175, 12, 126);}
+    from {background-color:  #a18cd1 ;}
+    to {background-color:  rgb(97, 18, 170);}
 }
 
 footer{
@@ -119,6 +121,7 @@ footer{
     border-radius: 5px;
   }
 .dropdown-content {
+    
     display: none;
     position: absolute;
     width: 150%;
@@ -138,7 +141,7 @@ footer{
   
 .dropdown-content a:hover {
     color: #FFFFFF;
-    background-color: #00A4BD;
+    
 }
 
 .formulario{
@@ -162,3 +165,19 @@ footer{
     padding: 0.5em;
     border-radius: 3px;
 }
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 990px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: px) {
+    
+}
+
