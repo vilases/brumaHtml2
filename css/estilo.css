@@ -12,41 +12,42 @@ h1{
     display: none;
 }
 .navegacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #a18cd1 ;
     border-radius: 5px;
     padding: 1em 0em;
-    position: relative;
-    margin-top: 0%;
-    top: 0;
-    width: 90%;
-    margin: 0 auto;
     z-index: 1;
 }
 
 .encabezado{
     position: relative;
-    top: 0;
+    display: flex;
     background-color: #a18cd1 ;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
+    flex-wrap: wrap;    
+    align-items: baseline;    
+    flex-direction: row;
     
 }
 
-nav a{
+.navegacion a{
+    font-size: 1.2em;
     background-color: rgb(97, 18, 170);
     padding: 5px;
     border-radius: 3px;
     margin: 5px;
     color: black;
-    text-decoration: none;
+    text-decoration: none;    
+
 }
-header p{
-    text-align: center;
-}
-header p img{
-    width: 10%;
-    
+
+.logo img {
+    width: 7em;
+
 }
 main{
     position: relative;
@@ -66,6 +67,7 @@ section{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 .item  {
     border-radius: 100px;
@@ -82,9 +84,13 @@ section{
     max-width: 800px;
 }
 .iconos{
+    transition: transform 2s;
     height: 100px;
     width: 100px ;
     margin: 40px;
+}
+.iconos:hover {
+    transform: scale(1.3) rotate(20deg)
 }
 .item:hover{  
     animation: cambiarColor 2s linear 4 normal forwards running;
@@ -97,13 +103,13 @@ section{
 }
 
 footer{
-    width: 100%;
+    width: 90%;
+    border-radius: 5px;
     position: relative;
-    top: 3em;
     text-align: center;
     background-color: #fbc2eb  ;
     color: black;
-    margin: 0 auto;
+    margin: 4em auto 0;
 
 }
 .dropdown {
@@ -165,19 +171,51 @@ footer{
     padding: 0.5em;
     border-radius: 3px;
 }
-@media screen and (min-width: 1200px) {
-
+.local {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 2em;
 }
-@media screen and (max-width: 1200px) {
-
-}
-@media screen and (max-width: 990px) {
-
-}
-@media screen and (max-width: 768px) {
-
-}
-@media screen and (max-width: px) {
+.local iframe {
+    width: 100%;
+    max-width: 600px;
     
 }
+.contacto  {
+    width: 20em;
+    margin: 1em 4em;
+    height: 380px;
+    
+}
+.contacto a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 700px) {
+    .encabezado {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 4em;
+    }
+    .navegacion {
+        margin: 0 auto;
+    }
+    .formulario {
+        left: 0.5em;
+        font-size: 1em;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+
 
