@@ -28,7 +28,8 @@ h1{
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    justify-content: space-evenly; 
     align-items: baseline;    
     flex-direction: row;
     
