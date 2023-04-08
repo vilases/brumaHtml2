@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://kit.fontawesome.com/57a21d2b89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <title>Suscribirse</title>
+    <title>Mostrar Datos</title>
 </head>
 <body>
     <header class="encabezado">
@@ -38,24 +39,67 @@
             <a href="suscribirse.html">Subscribirse</a>
         </nav>
     </header>
-    
-    <main>  
-        <form class="formulario" action="show_data.html" target="_blank">
-            <label for="firstname">Nombre: </label> <input type="text" name="firstname" placeholder="Ingrese su nombre aqui" required><br><br>
-            <label for="password">Contraseña: </label> <input type="password" name="password" placeholder="Ingrese su contraseña aqui" minlength="6" required><br><br>
-            <label for="lastname">Apellido: </label> <input type="text" name="lastname" placeholder="Ingrese su apellido aqui" required><br><br>
-            <label for="adrees">Direccion: </label> <input type="text" name="address" placeholder="Ingrese su direccion aqui" required><br><br>
-            <label for="city">Ciudad: </label> <input type="text" name="city" value="C.A.B.A."><br><br>
-            <label for="zipcode">Codigo Postal: </label> <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui" required><br><br>
-            <label for="birthdate">Fecha de Nacimiento:</label> <input type="date" name="birthdate" id="" required><br><br>
-           
-            <input id="env" type="submit" value="Enviar">
-        </form>
-    </main>
-    <footer>
-        <a href="https://api.whatsapp.com/send?phone=541131258499"><i class='bx bxl-whatsapp bx-md' style='color:#07c112'  ></i></a>
-        <a href="https://instagram.com/bruma_sahumerios?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram bx-md' style='color:#f1b211'  ></i></a>
-        <p>Derechos Reservados 2023</p>  
-    </footer>
+<main class="tabla">   
+<p>&nbsp;</p>
+<h2>Esta es tu informacion recibida: </h2>
+
+<table>
+  <tr>
+    <th>Form Field</th>
+    <th>Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td>' + field + '</td>');
+    document.writeln('<td>' + value + '</td></tr>');
+  }
+}
+
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</main>
+<footer>
+  <a href="https://api.whatsapp.com/send?phone=541131258499"><i class='bx bxl-whatsapp bx-md' style='color:#07c112'  ></i></a>
+  <a href="https://instagram.com/bruma_sahumerios?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram bx-md' style='color:#f1b211'  ></i></a>
+  <p>Derechos Reservados 2023</p>  
+</footer>
 </body>
 </html>

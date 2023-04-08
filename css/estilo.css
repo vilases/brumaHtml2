@@ -261,6 +261,29 @@ footer{
     color:#000000;
     font-size: 1.5em;
 }
+
+.tabla {
+    width: 80%;
+    margin: 0 auto;
+}
+.tabla p {align-self: center;}
+.tabla h2 {align-self: center;
+    margin-bottom: 0.5em;
+font-size: +1;}
+.tabla table {border: 1px blue solid;
+    align-self: center;
+    width: 226px;
+}
+.tabla th { align-self: center;
+    margin: 0.5px;
+    border: red 1px solid;
+}
+.tabla td {
+    align-self: center;
+    margin: 0.5px;
+    border: black 1px solid;
+}
+
 @media screen and (max-width: 700px) {
     .encabezado {
         width: 100%;
