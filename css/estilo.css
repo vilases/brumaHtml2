@@ -36,6 +36,7 @@ h1{
 }
 
 .navegacion a{
+    display: relative;
     font-size: 1.2em;
     background-color: rgb(97, 18, 170);
     padding: 5px;
@@ -50,6 +51,9 @@ h1{
     width: 7em;
 
 }
+video {
+    width: auto;
+}
 main{
     
     width: 90%;
@@ -60,12 +64,13 @@ main{
 }
 
 section{
-   
+    width: 90%;
     position: relative;
     margin: 0 auto;
     
 }
 article {
+    
     margin: 1em auto;
     text-align: center;
 }
@@ -135,9 +140,11 @@ footer{
     font-size: 2em;
     display: inline-block;
     position: relative;
+    z-index: 2;
   }
   #boton {
-    margin: 0;
+    
+    margin: 0.7em;
     padding: 0.5em;
     font-size: 0.5em;
     background-color: rgb(97, 18, 170);
@@ -163,6 +170,50 @@ footer{
 }
   
 .dropdown-content a:hover {
+    color: #FFFFFF;
+    
+}
+.dropdown1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+  }
+  
+  
+  #boton1 {
+    display: none;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 0.5em;
+    background-color: rgb(97, 18, 170);
+    border-radius: 5px;
+  }
+  #boton1 img {
+    width: 1em;
+  }
+.dropdown-content1 {
+    
+    display: none;
+    position: absolute;
+    width: 500%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba( 0,0,0,1);
+  }
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+  
+.dropdown-content1 a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+  
+.dropdown-content1 a:hover {
     color: #FFFFFF;
     
 }
@@ -216,6 +267,7 @@ footer{
         flex-direction: column;
         justify-content: center;
     }
+    
     .logo {
         margin: 0 auto;
     }
@@ -226,6 +278,7 @@ footer{
         margin: 0 auto;
         position: relative;
     }
+    .navegacion a {font-size: 1em;}
     .formulario {
         left: 0.5em;
         font-size: 1em;
@@ -240,5 +293,47 @@ footer{
     
 }
 
+@media screen and (max-width: 479px) {
+    .encabezado {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    video {width: 10em;}
+    .logo {
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 3em;
+    }
+    .navegacion {
+        
+        margin: 0 auto;
+        position: relative;
+        
+
+    }
+    
+    .formulario {
+        left: 0.5em;
+        font-size: 1em;
+    }
+    footer {
+        width: 100%;
+    }
+    .iconos{    height: 50px;
+        width: 50px ;
+        margin: 5px;
+    }
+    .navegacion a{display: none;}
+    #boton1 {display: inherit;
+   }
+   h1 {
+    margin-right: 1em;
+    display: inline;
+    font-size: 2.5em;
+}
+    
+}
 
 
